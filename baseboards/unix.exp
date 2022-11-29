@@ -21,6 +21,11 @@
 load_generic_config "unix"
 
 process_multilib_options ""
+set_board_info gcc,timeout 5400
+
+set_board_info g++,timeout 5400
+
+set_board_info gfortran,timeout 5400
 
 set_board_info compiler  "[find_gcc]"
 

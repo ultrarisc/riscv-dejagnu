@@ -40,7 +40,7 @@ proc unix_load { dest prog args } {
     set orig_ld_library_path ""
 
     if {![info exists test_timeout]} {
-	set test_timeout 300
+	set test_timeout 3600
     }
 
     if { [llength $args] > 0 } {
